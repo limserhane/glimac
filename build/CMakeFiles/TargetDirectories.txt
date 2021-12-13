@@ -1,0 +1,9 @@
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/CMakeFiles/rebuild_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/CMakeFiles/edit_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/glimac/CMakeFiles/rebuild_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/glimac/CMakeFiles/edit_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/glimac/CMakeFiles/glimac.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/TP_template/CMakeFiles/rebuild_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/TP_template/CMakeFiles/edit_cache.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/TP_template/CMakeFiles/TP_template_SDLtemplate.dir
+/mnt/2E1C47BA1C477C39/esiee/e5/opengl/td2/GLImac-Template/build/TP_template/CMakeFiles/TP_template_SDLgarbage.dir

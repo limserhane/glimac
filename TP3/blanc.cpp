@@ -21,6 +21,34 @@ int main(int argc, char** argv) {
 	/*********************************
 	 * HERE SHOULD COME THE INITIALIZATION CODE
 	 *********************************/
+	
+	GLfloat vertices[] = { 
+		-0.5f, -0.5f, // P1
+		0.5f, -0.5f, // P2
+		0.0f, 0.5f // P3
+	};
+
+	// VBO
+	GLuint vbo;
+	glGenBuffers(1, &vbo);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	glBufferData(GL_ARRAY_BUFFER, 6 * sizeof(GLfloat), vertices, GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+	// VAO
+	GLuint vao;
+	glGenVertexArrays(1, &vao);
+	glBindVertexArray(vao);
+
+	// VAO - Position
+	const GLuint VERTEX_ATTRIBUTE_POSITION = 0;
+	glEnableVertexAttribArray(VERTEX_ATTRIBUTE_POSITION);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	glVertexAttribPointer(VERTEX_ATTRIBUTE_POSITION, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), 0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+	// VAO
+	glBindVertexArray(0);
 
 	// Application loop:
 	bool done = false;
@@ -36,10 +64,18 @@ int main(int argc, char** argv) {
 		/*********************************
 		 * HERE SHOULD COME THE RENDERING CODE
 		 *********************************/
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		glBindVertexArray(vao);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+		
 
 		// Update the display
 		windowManager.swapBuffers();
 	}
+
+	glDeleteBuffers(1, &vbo);
+	glDeleteVertexArrays(1, &vao);
 
 	return EXIT_SUCCESS;
 }
